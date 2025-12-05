@@ -1,3 +1,4 @@
+/*layout*/
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -38,12 +39,21 @@ main {
     margin: 0;
     padding: 0;
     width: 110px;
+    cursor: pointer;
 }
 
 .color-display {
     height: 414px;
 }
 
+#seed-color {
+    width: 61px;
+    height: 42px;
+    border-width: 0.5px;
+    border: none;
+}
+
+/*typography*/
 .color-code {
     height: 46px;
     margin: 0;
@@ -55,23 +65,6 @@ main {
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 0%;
-}
-
-form select,
-form input,
-form button {
-    vertical-align: middle; /* align all elements to the middle */
-    /* optional: make heights uniform */
-    height: 42px;
-    margin-right: 13px;
-}
-
-
-#seed-color {
-    width: 61px;
-    height: 42px;
-    border-width: 0.5px;
-    border: none;
 }
 
 #color-scheme-mode {
@@ -98,6 +91,29 @@ form button {
         right 13px center;
 }
 
+#copied {
+    font-family: inherit;
+    font-style: italic;
+    position: absolute;
+    left: 12.5%;
+    bottom: 150px;
+    padding: 20px 1px;
+    text-align: center;
+    width: 300px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+/*form & button*/
+form select,
+form input,
+form button {
+    vertical-align: middle; /* align all elements to the middle */
+    /* optional: make heights uniform */
+    height: 42px;
+    margin-right: 13px;
+}
 
 #get-color-btn {
     width: 123px;
@@ -111,5 +127,5 @@ form button {
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
+    cursor: pointer;
 }
-

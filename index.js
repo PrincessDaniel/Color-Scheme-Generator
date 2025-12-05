@@ -2,7 +2,7 @@ const seedColor = document.getElementById("seed-color")
 const colorSchemeMode = document.getElementById("color-scheme-mode")
 const colorSchemeForm = document.getElementById("color-scheme-form")
 const colorSchemeContainer = document.getElementById("color-scheme-container")
-const colorBoxes = document.getElementsByClassName("color-box")
+const copied = document.getElementById("copied")
 
 colorSchemeForm.addEventListener("submit", function(e) {
     e.preventDefault()
@@ -34,13 +34,15 @@ document.addEventListener("click", function(e) {
     const box = e.target.closest(".color-box")
     
     if(!box) {
-        console.log("nothing")
+        return
     }
     else {
-        const hex = box.dataset.hex
-        console.log(hex)
+        const hex = box.dataset.hex        
         navigator.clipboard.writeText(hex)
-            .then(() => console.log("copied"))
+            .then(() => {
+                copied.hidden = false
+                setTimeout(() => copied.hidden = true, 1000)
+            })
             .catch(err => console.error("failed to copy"))
     }
 })
