@@ -99,7 +99,7 @@ main {
     font-family: inherit;
     font-style: italic;
     position: absolute;
-    left: 12.5%;
+    left: 15.5%;
     bottom: 150px;
     padding: 20px 1px;
     text-align: center;
@@ -155,5 +155,10 @@ form button {
     .color-code {
         height: 12vh;
         width: 100%;
+    }
+    
+    #copied {
+        top: 150px;
+        bottom: 250px;        
     }
 }
