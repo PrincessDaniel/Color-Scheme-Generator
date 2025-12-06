@@ -10,16 +10,18 @@ html, body {
 
 body {
     height: 550 px;
-    width: 550px;
+    width: 90vw;
     opacity: 1;
     font-family: "Inter", sans-serif;
     border: 1px solid #D1D5DB;
     margin: 20px;
     border-radius: 10px;
+    overflow: auto;
 }
 
 main {
     height: 90px;
+    width: 100%;
     background-color: #ffffff;
     opacity: 1;
     display: flex;
@@ -29,7 +31,7 @@ main {
 
 #color-scheme-container {
     display: flex;
-    width: 550px;
+    width: 100%;
     flex-grow: 1;
 }
 
@@ -38,7 +40,7 @@ main {
     flex-direction: column;    
     margin: 0;
     padding: 0;
-    width: 110px;
+    width: 20%;
     cursor: pointer;
 }
 
