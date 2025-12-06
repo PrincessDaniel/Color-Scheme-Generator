@@ -129,3 +129,21 @@ form button {
     line-height: 16px;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    
+    main {
+        height: 22vh;
+    }
+    
+    .color-display {
+        height: 66vh;
+    }
+    
+    .color-code {
+        height: 12vh;
+    }
+}
