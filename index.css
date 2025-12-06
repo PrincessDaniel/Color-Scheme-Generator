@@ -46,6 +46,8 @@ main {
 
 .color-display {
     height: 414px;
+    border: none;
+    border-radius: 50px;
 }
 
 #seed-color {
